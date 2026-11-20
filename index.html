@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aXTYA Motors | Drive Your Dreams</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #e60023;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #e60023;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 8%;
+    background:
+    linear-gradient(to right, #000 20%, transparent),
+    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600')
+    center/cover;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #e60023;
+}
+
+.hero p {
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #e60023;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: #e60023;
+}
+
+.cars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.car-card {
+    background: #171717;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 22px;
+}
+
+.car-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #e60023;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.about {
+    background: #121212;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 15px;
+    color: #ccc;
+}
+
+footer {
+    background: #111;
+    padding: 25px;
+    text-align: center;
+    color: #888;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">aXTYA MOTORS</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cars">Cars</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h1>DRIVE YOUR <span>DREAMS</span></h1>
+        <p>
+            Welcome to aXTYA Motors.
+            Discover luxury, performance and style.
+            Your dream car is waiting for you.
+        </p>
+        <a href="#cars" class="btn">EXPLORE CARS</a>
+    </div>
+</div>
+
+<!-- CARS SECTION -->
+<section id="cars">
+    <h2 class="section-title">OUR <span>COLLECTION</span></h2>
+
+    <div class="cars">
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800">
+            <div class="car-info">
+                <h3>Porsche 911</h3>
+                <p>Luxury Sports Car</p>
+                <div class="price">₹ 1.86 Cr*</div>
+                <a href="#contact" class="btn">Enquire Now</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800">
+            <div class="car-info">
+                <h3>BMW M4</h3>
+                <p>Powerful Performance</p>
+                <div class="price">₹ 1.50 Cr*</div>
+                <a href="#contact" class="btn">Enquire Now</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=800">
+            <div class="car-info">
+                <h3>Mercedes-Benz</h3>
+                <p>Premium Luxury</p>
+                <div class="price">₹ 1.20 Cr*</div>
+                <a href="#contact" class="btn">Enquire Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <h2 class="section-title">ABOUT <span>aXTYA MOTORS</span></h2>
+
+    <p>
+        aXTYA Motors is your destination for premium automobiles.
+        We believe every journey deserves excellence.
+        Our mission is to bring you outstanding cars,
+        exceptional quality and an unforgettable experience.
+        Discover your dream car with aXTYA Motors.
+    </p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <h2 class="section-title">CONTACT <span>US</span></h2>
+
+    <p>Interested in buying your dream car?</p>
+    <p>Email: contact@axtyamotors.com</p>
+    <p>Phone: +91 XXXXXXXXXX</p>
+    <p>Location: Gujarat, India</p>
+
+    <a href="mailto:contact@axtyamotors.com" class="btn">
+        CONTACT US
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 aXTYA Motors. All Rights Reserved.</p>
+    <p>Drive Your Dreams. Experience Excellence.</p>
+</footer>
+
+</body>
+</html>
